@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* <!-- hero section --> */
+
+.hero {
+    height: 90vh;
+    position: relative;
+}
+
+.hero video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero > div {
+    position: absolute;
+    top: 30vh;
+    left: 10vh;
+    padding: 1rem;
+    border-radius: 6px;
+    color: wheat;
+    backdrop-filter: blur(5px);
+
+    background: rgba(128, 128, 128, 0.379) ;
+    width: 550px;
+}
+
+.down {
+    font-size: 5rem;
+    color: rgba(9, 243, 9, 0.926);
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: rotate(90deg);
+
+   animation: goDown 1s infinite;
+   
+}
+@keyframes goDown {
+    0%{
+        bottom: 100px;
+        left: 50%;
+    }  
+    100%{
+        bottom: 10px;
+        left: 50%;
+    }   
+}
+
+/* <!-- navbar --> */
+    nav {
+        background: black;
+        color: rgba(9, 243, 9, 0.926);
+        position: sticky;
+        top: 0;
+}
+
+nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 0.5rem 0;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+}
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li:hover{
+    color: white;
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+/* <!-- paragraph --> */
+[class^="img"] {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background: #0000008a;
+    color: white;
+    font-size: 2rem;
+    padding: 1.4rem 5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+}
+
+/* <!-- image --> */
+.img1 {
+    background: url(./assets/1.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+.img2 {
+    background: url(./assets/2.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+.img3 {
+    background: url(./assets/3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+.img4 {
+    background: url(./assets/4.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+footer {
+    background: black;
+    color: white;
+    padding: 4rem;
+    text-align: center;
+
+}
